@@ -1,4 +1,7 @@
 <?php
+
+include '/src/com/arun/php/shared/DbConnectionUtil.php';
+
 if(isset($_POST['upload']) && $_FILES['userfile']['size'] > 0)
 {
 	$fileName = $_FILES['userfile']['name'];
@@ -14,12 +17,7 @@ if(isset($_POST['upload']) && $_FILES['userfile']['size'] > 0)
 	if(!get_magic_quotes_gpc())
 	{
 		$fileName = addslashes($fileName);
-	}
-
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname ="arun";
+	}	
 	// Create connection
 	$conn = new mysqli($servername, $username, $password, $dbname);
 	// Check connection
