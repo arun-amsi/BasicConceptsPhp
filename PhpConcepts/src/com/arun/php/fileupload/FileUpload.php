@@ -1,7 +1,5 @@
+<?php include '../shared/DbConnectionUtil.php'; ?>
 <?php
-
-include '/src/com/arun/php/shared/DbConnectionUtil.php';
-
 if(isset($_POST['upload']) && $_FILES['userfile']['size'] > 0)
 {
 	$fileName = $_FILES['userfile']['name'];

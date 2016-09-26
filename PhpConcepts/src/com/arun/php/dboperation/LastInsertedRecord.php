@@ -1,5 +1,5 @@
+<?php include '../shared/DbConnectionUtil.php'; ?>
 <?php
-include '/src/com/arun/php/shared/DbConnectionUtil.php';
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
