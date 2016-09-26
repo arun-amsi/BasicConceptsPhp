@@ -1,7 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
+include '/src/com/arun/php/shared/DbConnectionUtil.php';
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
